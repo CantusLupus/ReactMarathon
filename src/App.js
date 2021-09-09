@@ -1,17 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import HeaderBlock from './components/HeaderBlock';
+import LayoutBlock from './components/LayoutBlock';
+import FooterBlock from './components/FooterBlock';
+import Image from './assets/bg3.jpg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World, ReactJS!
-        </p>
-
-      </header>
-    </div>
+    <>
+      <HeaderBlock title="This is title" desc="This is Description!" />
+      <LayoutBlock
+        title="This is title"
+        desc="This is Description!"
+        urlBg={Image}
+      />
+      <LayoutBlock
+        title="This is title"
+        desc="This is Description!"
+      />
+      <LayoutBlock
+        title="This is title"
+        desc="This is Description!"
+        urlBg={Image}
+      />
+      <FooterBlock />
+    </>
   );
 }
 
